@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Education for all | Jude Raji</title>
+		<link rel="shortcut icon" type="image/x-icon" href=images/favicon.ico>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>
+									<ul class="icons alt">
+									<li><a href="https://www.twitter.com/JudeRaji_" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/jude-raji" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/juderaji" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Unlocking Donor Insights for Education for All</h1>
+									</header>
+
+									<span class="image main"><img src="images/education_for_all/education_dashboard.png" alt="" /></span>
+
+									<h3>Introduction:</h3>
+									<p>In the landscape of philanthropy, data is often an untapped resource. For organizations like Education for All, 
+										which strives to make learning accessible to underserved communities, understanding the nuances of donor behavior is critical. 
+										This understanding shapes the strategies that open hearts and wallets, driving the mission forward. 
+										My role in this narrative was not just to interpret a dataset but to weave a story from numbers that could galvanize potential benefactors into action.</P>
+										<p>The task was both a privilege and a challenge—a privilege because of the potential impact on educational accessibility, 
+										and a challenge because it required distilling a wealth of information into a clear, compelling narrative. 
+										The raw material was a rich dataset: a tapestry of figures and facts about the past year’s donation activities. My objective? 
+										To transform this into insights that would resonate with stakeholders at an all-important investor meeting.</p>
+									<hr class="major" />
+									
+									<h3>Problem Statement:</h3>
+									
+									<p>Education for All, a charity organization wants to organize a fundraising event for the next year. 
+										The Head of the Fundraising team would like a report on donor insights and donation rates for the previous year, 
+										and how donation figures and frequencies can be increased.</p>
+									<h3>Task:</h3>
+									<p>As a Data Analyst, working for the Charity, Write a report and create a dashboard as per the requirements provided by stakeholders. 
+										Also, give actionable insights about how to:</p>
+									<ul>
+										<li>Increase donors in the database.</li>
+										<li>Increase donation frequency of donors, and</li>
+										<li>Increase the value of donations in the database.</li>
+									</ul>
+
+									<hr class="major" />
+									
+									<h3>Extra Note</h3>
+									<p>In two weeks, the team is having a fundraising strategy meeting for the following year, 
+										and I will need to present insights from donation data to inform my fundraising strategy and increase donations.
+										Two tables have been provided for this exercise. When merged together, These tables contain 1,000 records and 15 fields:</p>
+										<div class="row">
+										    <div class="column">
+										        <h4>EFO_Donation_Data</h2>
+										        <ul>
+												<li><b>id</b></B>: Donor first name</li>
+												<li><b>first_name</b>: Donor last name</li>
+												<li><b>last_name</b>: Donor email address</li>
+											  	<li><b>email</b>: Donor gender</li>
+												<li><b>job_vield</b>: Donor job field</li>
+												<li><b>donation</b>: Donoation amount</li>
+												<li><b>state</b>: Donor state of residence (US)</li>
+												<li><b>shirt_size</b>: Donor t-shirt size</li>
+											</ul>
+										    </div>
+										<div></div>
+											<div></div>
+											<div></div>
+																		    
+										    <div class="column">
+										        <h4>EFO_Donor_Data</h2>
+										        <ul>
+												<li><b>id</b>: Donor ID</li>
+												<li><b>donation_frequency</b>: Frequency of donation</li>
+												<li><b>university</b>: Donor University attended</li>
+												<li><b>car</b>: Donor car make</li>
+												<li><b>second_language</b>: Donor second language</li>
+												<li><b>favourite_colour</b>: Donor favourite colour</li>
+												<li><b>movie_genre</b>: Donor favourite movie genre</li>
+										        </ul>
+										    </div>
+										</div>
+									
+									<hr class="major" />
+
+									<h3>The Analytical Approach:</h3>
+									<p>The journey began with root cause analysis (RCA), a methodical approach to uncover the underlying reasons for the variations in donation figures across different regions.
+										Employing the Five Whys technique, I was able to delve into the data and question each finding to reach the core issues that affect fundraising outcomes.</p>
+	
+									<h3>Data cleaning:</h3>
+									<p>Before diving deep into analysis, the dataset underwent a rigorous cleaning process to ensure the integrity and clarity of the insights. This involved:</p>
+										<ol>
+											<li><b>Removing Duplicates</b>: Ensuring no donor was counted more than once.</li>
+											<li><b>Addressing Missing Values</b>: Filling or removing gaps (or null values) in the data where necessary.</li>
+											<li><b>Normalizing Data</b>: Adjusting numerical values for comparability, crucial for analysis.</li>
+											<li><b>Correcting Errors</b>: Amending typos and inaccuracies in state names, job field, and other categorical data.</li>
+											<li><b>Consolidating Data</b>: Merging both (donation and donor) tables while avoiding redundancy.</li>
+											<li><b>Anonymizing Data</b>: Protecting donor privacy by anonymizing personal information where required.</li>
+											<li><b>Pruning Irrelevant Data</b>: Removing non-essential data fields for a focused analysis.</li>
+											<li><b>Sorting and Filtering</b>: Arranging the data for optimal analysis and filtering out the noise.</li>
+											<li><b>Verifying Accuracy</b>: Ensuring the dataset’s reflections of real-world entities post-cleaning.</li>
+										</ol>
+									<p>With a clean and reliable dataset, the stage was set for deeper analysis and visualization.</p>
+
+									<hr class="major" />
+									<h3>Insights and Recommendations:</h3>
+									<p>Diving into the heart of the dataset revealed a narrative rich with insights. 
+										The data spoke of not just numbers, but of people, places, and the potential for change. 
+										It illustrated a nuanced portrait of donor activity, with each metric telling a part of the story.</p>
+
+										<h4>Gender and Donation Patterns</h4>
+										<p>With the Females donating $121,457 (508 donors) and Males donating $127,628 (492 donors), we can rightly say that it is an even gender distribution.</p>
+											<center><img width="600" src="images/education_for_all/Donations by Gender.png" alt="" /></center>
+										<h4>Geographical Giving Trends</h4>
+										<p>Digging into the maps, California's vast donor base lit up like a beacon of generosity.
+											California has the highest number of donors (113), and the highest amount of donations ($30,264).
+											However, South Dakota had the highest donation density ($401.00 per donor) while Alabama had the lowest donation density ($131.45 per donor).</p>
+											<center><img width="600" src="images/education_for_all/map.jpg" alt="" /></center>
+									
+										<h4>Donor Engagement and Frequency</h4>
+											<p>One-time donations are the most popular, significantly outpacing the lesser frequent monthly and weekly contributions.</p>
+											<center><img width="600" src="images/education_for_all/donation frequency.png" alt="" /></center>
+		
+										<h4>Job Type Donation Influence</h4>
+										<p><b>Human Resources</b> had the highest number of Donors (93) and the highest amount of donations ($24,060), 
+											while <b>Legal had the lowest number of donors (66) and the lowest amount of donations ($17,309)</b>. However, Research and 
+											Development had the highest donation density ($272.17 per donor), while Sales 
+											had the lowest donation frequency ($229.02)</p>
+
+									<hr class="major" />
+									<h3>Recommendations for Strategic Outreach:</h3>
+									<ul>
+										<li><b>Enhanced Focus on California</b>: The suggestion to increase efforts in California is strategic. 
+											Even though the state leads in total donations, optimizing the average donation value can lead to significant growth. 
+											Tailored campaigns could inspire larger contributions, leveraging the existing donor base.</li>
+										<li><b>Expanding Geographic Outreach</b>: Targeting other major states with potential donor bases can help diversify and increase overall donations. 
+											Broadening the donor pool is essential for sustainable growth and can also protect against regional economic downturns.</li>
+										<li><b>Engagement in Underrepresented Regions</b>: Identifying and addressing the lack of donations in the Northeast, Midwest, and South is critical. 
+											This could involve researching barriers to giving in these areas and crafting specific strategies to overcome them.</li>
+										<li><b>Increasing Donation Frequency</b>: Encouraging donors to contribute more regularly is a sound strategy for building a stable stream of revenue. 
+											Regular giving can also strengthen the donor's emotional investment in the cause.</li>
+										<li><b>Data Streamlining and Relevance</b>: Purging irrelevant data points makes for a more focused analysis and decision-making process. 
+											It's important to collect data that can lead to actionable insights.</li>
+										<li><b>In-depth Donor Analysis</b>: Gathering more demographic data, such as age and income levels, 
+											can greatly enhance personalized fundraising approaches and enable targeted engagement strategies.</li>
+										<li><b>Collaboration with Educational Institutions</b>: Given that a significant portion of donors are educated, 
+											partnerships with educational institutions could tap into a network of potential donors who already value learning, 
+											resonating with the charity's mission.</li>
+									</ul>
+
+									<hr class="major" />
+									<h3>Conclusion and Reflections</h3>
+								<p>The journey with Education for All underscored the transformative power of data when harnessed with intention and expertise. 
+									The analysis was more than a task; it was a commitment to turning data into actionable knowledge that could significantly advance the cause of educational accessibility.</p>
+									<p>For a more detailed exploration of the data story, please visit the <a href="https://app.powerbi.com/view?r=eyJrIjoiNTgwZGJjYzItZTgzYy00MTQ4LWI2MmYtY2U2M2FhNDk0MmQ2IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9">Dashboard</a></p>
+								
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="https://drive.google.com/file/d/1S-CeUWG2egh5Nez09dIQMNWU9Ry_40jF/view?usp=sharing">Download my Resume</a></li>
+										<li>
+											<span class="opener">My Projects</span>
+											<ul>
+												<li><a href="tesla_sales.html">Tesla's Performance Analysis</a></li>
+												<li><a href="udemy_courses.html">Udemy Courses Dashboard</a></li>
+												<li><a href="education_for_all.html">Education for All (Donor Analsis)</a></li>
+												<li><a href="#">Video Games Sales Dashboard</a></li>
+												<li><a href="#">Plato's Pizza Sales Dashboard</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Check out some other projects</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="tesla_sales.html" class="image"><img src="images/tesla_sales/tesla_home.png" alt="" /></a>
+											<p>Tesla's Growth and Global Reach: 2019 - 2023 Snapshot</p>
+										</article>
+										<article>
+											<a href="udemy_courses.html" class="image"><img src="images/demy_main.jpg" alt="" /></a>
+											<p>Unveiling e-learning dynamics: A Udemy Dashboard Analysis</p>
+										</article>
+										<article>
+											<a href="udemy_courses.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Unlocking Donor Insigts for Education for All</p>
+										</article>
+										
+									</div>
+									<ul class="actions">
+										<li><a href="index.html" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>You can reach out to me via my email.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:juderaji10@gmail.com">juderaji10@gmail.com</a></li>
+										<li class="icon solid fa-home">Brampton • Ontario • Canada</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
